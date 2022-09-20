@@ -1,0 +1,68 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+main {
+  height: 45%;
+  width: 55%;
+  margin: 20% auto;
+  background-color: hsla(240, 19%, 13%, 1);
+  padding: 40px 20px;
+}
+
+.grid-container {
+  min-height: 300px;
+  display: grid;
+  /* grid-template-columns: 50px 50px; */
+  grid-template-areas:
+    "orange orange orange yellow"
+    "orange orange orange yellow"
+    "green green blue blue"
+    "green green blue-s blue-s";
+  gap: 10px;
+  padding: 10px;
+}
+.orange {
+  background-color: hsla(14, 84%, 52%, 1);
+  width: 95%;
+  height: 100%;
+  grid-area: orange;
+  padding: 20px 15px;
+
+  margin-right: -20%;
+}
+.yellow {
+  background-color: hsla(39, 98%, 49%, 1);
+  width: 90%;
+  height: 100%;
+  grid-area: yellow;
+  padding: 20px 10px;
+}
+.green {
+  background-color: hsla(126, 52%, 44%, 1);
+  width: 95%;
+  height: 100%;
+  grid-area: green;
+  padding: 10px 10px;
+  margin-top: 50px;
+}
+.blue {
+  background-color: hsla(203, 98%, 59%, 1);
+  width: 95%;
+  height: 100%;
+  grid-area: blue;
+  padding: 3px 2px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-left: 20px;
+}
+.blue-s {
+  background-color: hsla(203, 98%, 59%, 1);
+  width: 95%;
+  height: 100%;
+  grid-area: blue-s;
+  margin-top: 65px;
+  padding: 2px 2px;
+  margin-left: 20px;
+}
